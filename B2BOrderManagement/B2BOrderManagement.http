@@ -1,0 +1,6 @@
+@B2BOrderManagement_HostAddress = http://localhost:5185
+
+GET {{B2BOrderManagement_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
