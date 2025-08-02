@@ -9,5 +9,6 @@
         public string Role { get; set; } // e.g., Admin, Customer, etc.
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+        public bool IsActive { get; set; } = true; // Indicates if the user account is active 
     }
 }
