@@ -19,7 +19,7 @@ namespace B2BOrderManagement.Controllers
             var list = await _service.GetAllUsersAsync();
             return Ok(new { list });
         }
-        [HttpGet]
+        [HttpGet("{id}")] 
         public async Task<IActionResult> GetById(int id)
         {
             var user = await _service.GetUserByIdAsync(id);
