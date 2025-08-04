@@ -17,7 +17,14 @@ namespace B2BOrderManagement.Controllers
         public async Task<IActionResult> GetAll()
         {
             var list = await _service.GetAllUsersAsync();
-            return Ok(new { message = "merhaba", date = list });
+            return Ok(new { list });
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var user = await _service.GetUserByIdAsync(id);
+            if (user == null) return NotFound();
+            return Ok(user);
         }
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] User user)
