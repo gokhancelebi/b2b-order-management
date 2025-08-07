@@ -1,4 +1,4 @@
-﻿namespace B2BOrderManagement.Models
+﻿namespace B2BOrderManagement.Models.User
 {
     public class User
     {

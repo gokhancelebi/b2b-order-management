@@ -1,5 +1,5 @@
 ﻿using B2BOrderManagement.Repositories;
-using B2BOrderManagement.Models;
+using B2BOrderManagement.Models.User;
 
 namespace B2BOrderManagement.Services
 {

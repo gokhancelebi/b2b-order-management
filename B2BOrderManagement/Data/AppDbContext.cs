@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using B2BOrderManagement.Models;
+using B2BOrderManagement.Models.User;
 
 namespace B2BOrderManagement.Data
 {

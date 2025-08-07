@@ -1,4 +1,4 @@
-﻿using B2BOrderManagement.Models;
+﻿using B2BOrderManagement.Models.User;
 using B2BOrderManagement.Services;
 using Microsoft.AspNetCore.Mvc; 
 
