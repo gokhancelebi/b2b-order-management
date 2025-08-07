@@ -1,5 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using B2BOrderManagement.Models.User;
+using B2BOrderManagement.Models.Product;
+using B2BOrderManagement.Models.Category;
+using B2BOrderManagement.Models.Attribute.Attribute;
+using B2BOrderManagement.Models.TaxClass;
+using B2BOrderManagement.Models;
+using B2BOrderManagement.Models.Order;
+using B2BOrderManagement.Models.Variant;
 
 namespace B2BOrderManagement.Data
 {
@@ -9,5 +16,12 @@ namespace B2BOrderManagement.Data
             : base(options)
         { }
         public DbSet<User> Users { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Attribute> Attributes { get; set; }
+        public DbSet<AttributeValue> AttributeValues { get; set; }
+        public DbSet<TaxClass> TaxClasses { get; set; }
+        public DbSet<WebsiteOption> WebsiteOptions { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }
