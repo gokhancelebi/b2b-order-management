@@ -25,5 +25,11 @@ namespace B2BOrderManagement.Data
         public DbSet<Order> Orders { get; set; }
         public DbSet<Variant> Variants { get; set; }
         public DbSet<VariantAttributeValue> VariantAttributeValues { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ProductAttribute>()
+            .Property(e => e.Type)
+            .HasConversion<string>();
+        }
     }
 }
