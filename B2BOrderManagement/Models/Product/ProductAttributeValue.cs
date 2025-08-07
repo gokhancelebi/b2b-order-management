@@ -1,6 +1,6 @@
 namespace B2BOrderManagement.Models.Product
 {
-    public class ProductXProductAttributeValue
+    public class ProductAttributeValue
     {
         public int Id { get; set; }
         public int ProductId { get; set; }
