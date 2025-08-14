@@ -21,12 +21,12 @@ namespace B2BOrderManagement.Models.Attribute
         [EnumMember(Value = "datebox")]
         DateBox,
     }
-    public class Attribute
+    public class ProductAttribute
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         [JsonConverter(typeof(StringEnumConverter))]
-        public AttributeType Type { get; set; }
+        public AttributeType AttributeType { get; set; }
     }
 }

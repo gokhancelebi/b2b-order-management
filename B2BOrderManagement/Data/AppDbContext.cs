@@ -28,7 +28,7 @@ namespace B2BOrderManagement.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ProductAttribute>()
-            .Property(e => e.Type)
+            .Property(e => e.AttributeType)
             .HasConversion<string>();
         }
     }
